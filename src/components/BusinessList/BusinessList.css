@@ -1,0 +1,47 @@
+/* Business Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+/* No global styles */
+
+/* 2. Typography Styles
+======================================== */
+
+/* No typography styles */
+
+/* 3. Structure Styles
+======================================== */
+
+.BusinessList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 4.4rem 10%;
+}
+
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+
+/* Site Footer */
+
+/* No module styles */
+
+/* 5. Component Styles
+======================================== */
+
+/* No component styles */
+
+/* 6. Page Styles
+======================================== */
+
+/* No page styles */
