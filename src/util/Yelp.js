@@ -11,6 +11,7 @@ export const Yelp = {
 					return {
 						id: business.id,
 						imageSrc: business.image_url,
+						url: business.url,
 						name: business.name,
 						address: business.location.address1,
 						city: business.location.city,
