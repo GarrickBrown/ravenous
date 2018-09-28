@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
+import { Auto } from '../../util/Auto';
 
 class SearchBar extends React.Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class SearchBar extends React.Component {
 		this.handleSearch = this.handleSearch.bind(this);
 		this.handleRadiusChange = this.handleRadiusChange.bind(this);
 		this.handleKeyPress = this.handleKeyPress.bind(this);
+		this.searchAuto = this.searchAuto.bind(this);
 	}
 
 	getSortByClass(sortByOption) {
@@ -72,6 +74,16 @@ class SearchBar extends React.Component {
 			return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)} onClick={this.handleSortByChange.bind(this, sortByOptionValue)}>{sortByOption}</li>;
 		});
 	}
+
+	searchAuto(event) {
+		Auto(event.target.value).then(description => {
+			this.setState({
+				location: description
+			});
+			console.log(this.state.location);
+		})
+	}
+
 
 	render() {
 		return (

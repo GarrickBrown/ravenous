@@ -8,7 +8,7 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			businesses: []
+			businesses: [],
 		};
 		this.searchYelp = this.searchYelp.bind(this);
 	}
@@ -25,7 +25,7 @@ class App extends React.Component {
 		return (
 			<div className="App">
 				<h1>ravenous</h1>
-				<SearchBar searchYelp={this.searchYelp}/>
+				<SearchBar searchYelp={this.searchYelp} searchAuto={this.searchAuto}/>
 				<BusinessList businesses={this.state.businesses} /> 
 			</div>
 		);
