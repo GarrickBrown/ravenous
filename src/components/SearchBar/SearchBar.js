@@ -30,6 +30,7 @@ class SearchBar extends React.Component {
 		this.setState({
 			sortBy: sortByOption
 		});
+		setTimeout(this.handleSearch, 0);
 		this.handleSearch();
 	}
 
